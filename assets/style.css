@@ -7,9 +7,24 @@ body {
 }
 
 .countdown {
-    height: 360px;
+    height: 250px;
     width: 600px;
     background-color: orange;
     position: relative;
     top: 22rem;
 }
+
+@media screen and (min-width: 768px) {
+    .rotate-infinite {
+    animation: infinite-rotation 2s linear infinite;
+    }
+    }
+    
+    @keyframes infinite-rotation {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+    }
