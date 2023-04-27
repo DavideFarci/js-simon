@@ -14,3 +14,6 @@ Esistono dei metodi per trasformare una data in millisecondi?
 Buon divertimento!
 */
 
+const eleTimer = new Date("2023-04-28T09:30:00").getTime();
+
+document.querySelector("#timer").innerHTML = eleTimer;
